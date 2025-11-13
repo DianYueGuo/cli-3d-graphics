@@ -1,11 +1,12 @@
 #include <iostream>
 
 #include "utility.hpp"
+#include "obj.hpp"
 
 
 int main()
 {
-    print_binary_file_hex("cube-Body.stl");
+    read_obj_file("cube-Body.obj");
 
     return 0;
 }
