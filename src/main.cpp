@@ -11,5 +11,8 @@ int main()
         std::cout << "GLFW initialization failed." << std::endl;
     }
 
+    
+    glfwTerminate();
+
     return 0;
 }
