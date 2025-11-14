@@ -6,7 +6,7 @@
 int main()
 {
     if (glfwInit()) {
-        std::cout << "GLFW initialization successed." << std::endl;
+        std::cout << "GLFW initialization succeeded." << std::endl;
     } else {
         std::cout << "GLFW initialization failed." << std::endl;
     }
@@ -17,7 +17,7 @@ int main()
 
     GLFWwindow* window = glfwCreateWindow(640, 480, "My Title", NULL, NULL);
     if (window) {
-        std::cout << "Window or OpenGL context creation successed." << std::endl;
+        std::cout << "Window or OpenGL context creation succeeded." << std::endl;
 
         while (!glfwWindowShouldClose(window)) {
         }
