@@ -9,7 +9,7 @@ int main()
         std::cout << "GLFW initialization succeeded." << std::endl;
     } else {
         std::cout << "GLFW initialization failed." << std::endl;
-        exit(EXIT_FAILURE);
+        return EXIT_FAILURE;
     }
 
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -28,12 +28,12 @@ int main()
     } else {
         std::cout << "Window or OpenGL context creation failed." << std::endl;
         glfwTerminate();
-        exit(EXIT_FAILURE);
+        return EXIT_FAILURE;
     }
 
     glfwDestroyWindow(window);
 
     glfwTerminate();
 
-    exit(EXIT_SUCCESS);
+    return EXIT_SUCCESS;
 }
